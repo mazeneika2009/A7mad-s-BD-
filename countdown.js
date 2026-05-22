@@ -14,7 +14,6 @@ function updateCountdown() {
 
     if (distance < 0) {
         if (countdownContainer) countdownContainer.style.display = 'none';
-        if (title) title.textContent = "The Special Day is Here! 💙";
         if (enterBtn) {
             enterBtn.style.display = 'inline-block';
             if (!enterBtn.classList.contains('revealed')) {
