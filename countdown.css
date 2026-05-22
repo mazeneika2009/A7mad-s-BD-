@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    font-family: 'Quicksand', sans-serif;
+    color: #4a4a4a;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #0369a1;
+    margin-bottom: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+}
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #0369a1;
+    margin-bottom: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+}
+
+.countdown-timer {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.time-block {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    min-width: 100px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.time-block:hover {
+    transform: translateY(-5px);
+}
+
+.time-block span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0ea5e9;
+}
+
+.time-block p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.4rem;
+    background: linear-gradient(45deg, #0284c7, #0369a1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(2, 132, 199, 0.3);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+        width: 90%;
+        border-radius: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .countdown-timer {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    .time-block {
+        padding: 0.8rem;
+        min-width: 70px;
+        flex: 1 1 70px;
+    }
+    .time-block span {
+        font-size: 1.5rem;
+    }
+}
